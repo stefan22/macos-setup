@@ -1,3 +1,4 @@
+```js
 #!/usr/bin/env bash
 set -e
 
@@ -120,3 +121,6 @@ command -v cz >/dev/null 2>&1 || npm install -g commitizen
 cz init cz-conventional-changelog --save-dev --save-exact || true
 
 echo "✔ Setup complete. Restart your terminal."
+
+
+```
