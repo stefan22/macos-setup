@@ -1,3 +1,33 @@
+# MacOS Setup Script
+
+A handy shell script to get u up and running on Apple Silicon machines
+
+<br />
+
+
+## CLI tools, GUI, fonts and NVM
+
+- Installs and Updates homebrew
+- Installs and Updates Oh-My-Zsh
+- Installs Git formula
+- Installs Nvm formula (and creates `.nvm` directory in home folder`
+- Installs Yarn formula
+- Installs Commitizen formula
+- Installs Starship theme formula (.oh-my-zsh theme
+
+- Installs Firefox cask
+- Installs Brave browser cask
+- Installs Calibre cask
+- Installs Figma cask
+- Installs Imageoptim cask
+- Installs Hack-Nerd-font cask
+
+
+
+
+
+<br />
+
 ```js
 #!/usr/bin/env bash
 set -e
@@ -124,3 +154,28 @@ echo "✔ Setup complete. Restart your terminal."
 
 
 ```
+
+<br />
+
+- No Bulk `brew install --cask`
+- Each App:    
+   • checked    
+   • uninstall, if present    
+   • freshly reinstalled     
+- Script never stops halfway
+
+
+<br />
+
+
+
+### Other things that could be added to the script:
+
+- ssh directory, config file with key automatically pushed to keychain access app.
+- aliases move to its own file under .oh-my-zsh/custom
+- zshrc comnpletions install at .oh-my-zsh/custom/plugins
+- new zshrc file downloaded and installed from an existing prev saved file within git profile
+
+
+:100:
+
