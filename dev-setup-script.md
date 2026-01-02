@@ -171,10 +171,10 @@ echo "✔ Setup complete. Restart your terminal."
 
 ### Other things that could be added to the script:
 
-- ssh directory, config file with key automatically pushed to keychain access app.
-- aliases move to its own file under .oh-my-zsh/custom
-- zshrc comnpletions install at .oh-my-zsh/custom/plugins
-- new zshrc file downloaded and installed from an existing prev saved file within git profile
+- ssh directory, `~/.ssh/config` file and key automatically pushed to **keychain** acces app.
+- aliases move to its own file under `~/.oh-my-zsh/custom/`
+- zshrc comnpletions install at `~/.oh-my-zsh/custom/plugins/`
+- new zshrc file with copy/paste config settings off an existing file from within my git profile
 
 
 :100:
