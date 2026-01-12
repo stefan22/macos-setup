@@ -9,7 +9,9 @@
 # At System and local user levels. A quarantine folder created for System agents/daemons under /Users/shared
 
 # You don't need to have SIP disable to do: `launchctl disable for any user or system/com.apple.name`, but you do for `launchctl bootout system/com.apple.name`. Some services will be re-enabled automatically after they have been disabled at next boot and others must be re-enable manually `launchctl enable sytem/com.apple.name`
-# Bootout on the other hand will destroy them into little tiny pieces and won't ever comeback.
+# Bootout (SIP must be disable) on the other hand will destroy them into little tiny pieces and won't ever comeback.
+
+# A safer way to disable SIP is:  `csrutil enable --without fs`.  The regular way is by running `csrutil disable` but it also disables the fileSystem (fs), Kernel, and NVRAM
 
 # To target and disable services that only affect a user account do `launchctl disable gui/501/com.apple.name  (501 first user/admin account, 502 second user and so on)
 
