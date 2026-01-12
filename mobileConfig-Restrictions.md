@@ -2,8 +2,9 @@
 ## Applying MobileConfig Restrictions Settings in MacOS
 
  <br />
- This is probably the most reliable way to enforce or make sure your settings will persist system-wide in MacOS.       
-  <br /><br />
+ 
+ This is probably the most reliable way to enforce or make sure your settings will persist system-wide in MacOS.   **You do not need to be enrolled with an MDM provider to enforce Restrictions in your own computer**.
+  <br />
   
  This profile sets a group of restrictions to your machine along with a profile removal policy **removeProfilePassword**. Add or remove Restrictions and set your Profile Removal password below.
  
