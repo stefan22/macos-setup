@@ -2,6 +2,17 @@
 
 #!/bin/bash
 
+# Create a shell script
+# Copy/paste to a file at -> /usr/local/bin/
+# Rename as -> name.sh
+# Set execute permissions -> sudo chmod +x /usr/local/bin/name.sh
+# Remove any blocking file attributes -> xattr -cr /usr/local/bin/*
+# Set an alias on .zshrc -> alias name="/usr/local/bin/name.sh"
+# Run file on terminal -> name
+
+# SIP disabled not required with this approach.
+
+
 # === CONFIGURATION ===
 # List all full paths to apps you want to quarantine
 APPS_TO_QUARANTINE=(
