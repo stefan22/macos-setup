@@ -1,17 +1,33 @@
 ```bash
 
+# The Simply Disabled Script
+#
 # How to disable Services: System and User
+
+# List them first:
 # Run `launchctl print system` or `launchctl print gui/501` or `launchtl print gui/502`
 #
 # Pick your favs from System and/or User list
 # `launchctl disable sytem/com.apple.name` and/ or `launchctl disable gui/501/com.apple.name`
 #
 # Once disabled they should appear at the bottom of each list
-# Run `launchctl print system` or `launchctl print gui/501` f
+# Run `launchctl print system` or `launchctl print gui/501` again
 #
-# Since some of these services will be automatically re-enabled at next boot:
-# place undesireable system services on list 1 and user ones on list 2
-#
+# Since some of these services will be automatically re-enabled at next boot this script exist. So u could:
+# Place undesireable system services on list 1 and user services on list 2
+
+# Create a shell script
+# Copy/paste to a file at -> /usr/local/bin/
+# Rename as -> name.sh
+# Set execute permissions -> sudo chmod +x /usr/local/bin/name.sh
+# Remove any blocking file attributes -> xattr -cr /usr/local/bin/*
+# Set an alias on .zshrc -> alias name="/usr/local/bin/name.sh"
+# Run file on terminal -> name
+
+# SIP (Bootout option only)
+# SIP must be disabled only when u bootout a service. For example: `launchctl bootout system/com.apple.name`.  
+# Bootout will tear them down into little tiny pieces and won't ever comeback.
+# When one must bootout. A safer alternative to disable SIP is:  `csrutil enable --without fs`.  The regular way is `csrutil disable` but it also disables the fileSystem (fs), Kernel, and NVRAM
 
 
 
