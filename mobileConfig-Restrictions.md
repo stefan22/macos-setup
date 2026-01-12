@@ -12,7 +12,7 @@
  devices) and/or its policy may have been updated, so look for "`Device Managment Restrictions for MacOS`" online to make sure the correct restriction is being set.
  <br />
  
- To add restrictions these Restrictions Settings to your Mac **copy/paste** the the xml code below to a file in your computer and save it as **profileName.mobileconfig**. Then go to System Settings > General > Device Management to upload the file.
+ To add these Restrictions Settings to your Mac **copy/paste** the the xml code below to a file in your computer and save it as **profileName.mobileconfig**. Then go to System Settings > General > Device Management to upload the file.
 
 
 
