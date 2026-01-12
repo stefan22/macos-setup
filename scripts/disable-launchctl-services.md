@@ -1,8 +1,18 @@
 ```bash
 #!/bin/bash
 
-# Disabling Undesireables - or mobile device management related (personal favorites)
+# Disabling personal Undesireables: mostly mobile device management related services (mdm) especially when no mobileConfig have been set. These are personal preferences.
+# If you're having MdM problems, the best way (sometimes only way) to deal with it, is by creating your own mobileConfig settings with a free provider. Setting up an Apple push certificate with Apple and pushing mobileConfig profiles yourself.
 # At System and local user levels. A quarantine folder created for System agents/daemons under /Users/shared
+
+# Create a shell script
+# Copy/paste to a file at -> /usr/local/bin/
+# Rename as -> name.sh
+# Set execute permissions -> sudo chmod +x /usr/local/bin/name.sh
+# Remove any blocking file attributes -> xattr -cr /usr/local/bin/*
+# Set an alias on .zshrc -> alias name="/usr/local/bin/name.sh"
+# Run file on terminal -> name
+
 
 # List of launch agents/daemons to disable and quarantine
 AGENTS=(
