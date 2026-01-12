@@ -2,11 +2,24 @@
 
 #!/usr/bin/env bash
 set -e
-
-# installs networklock script to /usr/local/bin
-# creates 'launchd plist' to run at boot
-# sets up a strict 'PF firewall' allowing only Wi-fi traffic on 'en0'
-# Its fully persistent and safe (doesnt touch system interfaces)
+#
+# I. Wi-Fi Only
+# -----------------------------------------------------------------------
+# This script installs a networklock on /usr/local/bin
+# It creates a 'launchd plist' file that runs at boot
+# It sets a strict 'PF firewall' allowing only Wi-fi traffic on 'en0'
+# Its fully persistent and safe (it doesnt touch system interfaces)
+#
+#
+# II. Create a shell script
+# -----------------------------------------------------------------------
+# Copy/paste to a file at -> /usr/local/bin/
+# Rename as -> name.sh
+# Set execute permissions -> sudo chmod +x /usr/local/bin/name.sh
+# Remove any blocking file attributes -> xattr -cr /usr/local/bin/*
+# Set an alias on .zshrc -> alias name="/usr/local/bin/name.sh"
+# Run file on terminal -> name
+# -----------------------------------------------------------------------
 #
 #
 
@@ -155,22 +168,6 @@ sudo pfctl -e || true
 
 echo "✔ Network-lock setup complete."
 echo "✔ Script will run at boot and PF firewall is enabled (Wi-Fi only)."
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ```
