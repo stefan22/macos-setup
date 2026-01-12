@@ -1,7 +1,7 @@
 ```bash
 #!/bin/bash
 
-# Disabling personal Undesireables: mostly mobile device management related services (mdm) especially when no mobileConfig have been set. These are personal preferences.
+# Disabling personal Undesirables: mostly mobile device management related services (mdm) especially when no mobileConfig have been set. These are personal preferences.
 # If you're having MdM problems, the best way (sometimes only way) to deal with it, is by creating your own mobileConfig settings with a free provider. Setting up an Apple push certificate with Apple and pushing mobileConfig profiles yourself.
 # At System and local user levels. A quarantine folder created for System agents/daemons under /Users/shared
 
