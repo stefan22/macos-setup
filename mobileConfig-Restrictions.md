@@ -230,8 +230,6 @@
 			<false/>
 			<key>forceWiFiWhitelisting</key>
 			<false/>
-			<key>ratingRegion</key>
-			<string>gb</string>
 			<key>restrictFindMyFriends</key>
 			<true/>
 			<key>safariAcceptCookies</key>
