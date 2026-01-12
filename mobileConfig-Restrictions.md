@@ -5,14 +5,14 @@
  This is probably the most reliable way to enforce or make sure your settings will persist system-wide in MacOS.       
   <br /><br />
   
- This profile sets a group of restrictions to your machine along with a profile removal policy `removeProfilePassword`. Add or remove Restrictions and set your Profile Removal password below.
+ This profile sets a group of restrictions to your machine along with a profile removal policy **removeProfilePassword**. Add or remove Restrictions and set your Profile Removal password below.
  
- It is also possible to change the scope for the Profile using the `Payload Scope` key. Options are 'System' or 'User'.       
+ It is also possible to change the scope for the Profile using the **Payload Scope** key. Options are 'System' or 'User'.       
  If for some reason some of the restrictions settings are not being enforced, it is likely because the restriction may no longer applied to MacOS devices (or perhaps the setting is only available on IOS
  devices) and/or its policy may have been updated, so look for "`Device Managment Restrictions for MacOS`" online to make sure the correct restriction is being set.
  <br />
  
- **Copy/paste** the the xml code below to a file in your computer and save it as **profileName.mobileconfig**. Then go to System Settings > General > Device Management and upload the file to your computer.
+ To add restrictions these Restrictions Settings to your Mac **copy/paste** the the xml code below to a file in your computer and save it as **profileName.mobileconfig**. Then go to System Settings > General > Device Management to upload the file.
 
 
 
