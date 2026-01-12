@@ -8,7 +8,7 @@
  This profile sets a group of restrictions to your machine along with a profile removal policy **removeProfilePassword**. Add or remove Restrictions and set your Profile Removal password below.
  
  It is also possible to change the scope for the Profile using the **Payload Scope** key. Options are 'System' or 'User'.       
- Whenever a certain restriction setting isn't being enforced, it is likely because the restriction may no longer applied to MacOS devices (or perhaps the setting is only available on IOS
+ Whenever a certain restriction setting isn't being enforced, it is likely because the restriction may no longer applied to MacOS devices (or perhaps the policy setting is only available in IOS
  devices) and/or its policy may have been updated, so look for "`Device Managment Restrictions for MacOS`" online to make sure the correct restriction is being set.
  <br />
  
