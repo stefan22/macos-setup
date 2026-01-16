@@ -21,7 +21,7 @@ A lightweight shell script for initial macOS development environment configurati
 1. Create the file and paste the contents from `dev-setup-script.md`:
 
 ```bash
-  sudo touch /usr/local/bin/dev-setup-script.sh
+  sudo touch /usr/local/bin/dev-setup-script.sh // or somewhere in your local directory
   sudo nano /usr/local/bin/dev-setup-script.sh
 ```
 
@@ -85,6 +85,9 @@ A lightweight shell script for initial macOS development environment configurati
 
 
 <br />
+
+<img width="1631" height="1018" alt="macsetup" src="https://github.com/user-attachments/assets/4186a140-b690-42cd-ba77-738530ccf269" />
+
 
 :100:
 
