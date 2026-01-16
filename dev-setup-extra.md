@@ -106,16 +106,11 @@ export PATH="/opt/homebrew/bin:$PATH"
 zstyle ':omz:update' mode reminder                                                # remind me when new updates
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src     # Completions plugin path
 autoload -U compinit && compinit
+source $ZSH/oh-my-zsh.sh
 #
 plugins=(
   zsh-completions
 )
-#
-
-autoload -U compinit && compinit
-source $ZSH/oh-my-zsh.sh
-# 
-eval "$(starship init zsh)".   # loading starship theme
 #
 #
 # ----------------------------------------------------------------------------------
