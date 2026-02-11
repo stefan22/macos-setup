@@ -20,7 +20,7 @@ For some reason found it to be not as simple as you would with other Editors lik
     open -na "WebStorm.app" --args "$@" > /dev/null 2>&1 &
 
   ```
-- Now open any file with webstorm from the command line like this:
+- Now open any file with WebStorm from the command line like this:
   ```js
     webstorm .zshrc
   ```
@@ -28,3 +28,6 @@ For some reason found it to be not as simple as you would with other Editors lik
   ```js
     storm .zshrc
   ```
+
+
+💯
